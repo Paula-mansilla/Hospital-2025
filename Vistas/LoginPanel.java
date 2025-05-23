@@ -22,7 +22,7 @@ private JPanel panelLogin;
 panelLogin = new JPanel();
 panelLogin.setSize(500, 800);
 panelLogin.setOpaque(true);
-panelLogin.setBackground(Color.PINK);
+panelLogin.setBackground(Color.WHITE);
 panelLogin.setLayout(new GridBagLayout());
 
 //administrador de diseño
@@ -35,7 +35,7 @@ gbc.weightx = 1.0;
 JLabel titulo = new JLabel("Login");
 titulo.setHorizontalAlignment(SwingConstants.CENTER);
 titulo.setOpaque(true);
-titulo.setBackground(Color.CYAN);
+titulo.setBackground(Color.WHITE);
 gbc.gridx = 0;
 gbc.gridy = 0;
 gbc.gridwidth = 0;
@@ -44,14 +44,14 @@ panelLogin.add(titulo , gbc);
 
 
 //Entrada correo
-JTextField entradaCorreo = new JTextField("");
+JTextField entradaCorreo = new JTextField("Usuario");
 entradaCorreo.setSize(new Dimension(100,50));
 gbc.gridx = 1;
 gbc.gridy = 1;
 panelLogin.add(entradaCorreo , gbc); 
 
 //Entrada contraseña
-JPasswordField entradacontraseña = new JPasswordField("");
+JPasswordField entradacontraseña = new JPasswordField("Contraseña");
 entradacontraseña.setSize(new Dimension(100,50));
 gbc.gridx = 1;
 gbc.gridy = 2;
