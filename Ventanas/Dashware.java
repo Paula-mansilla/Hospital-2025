@@ -1,22 +1,26 @@
 package Ventanas;
+
 import javax.swing.JFrame;
+import Vistas.TablaBanner; 
 
 public class Dashware extends JFrame {
-    public Dashware() {
-        JFrame Dashware = new JFrame();    
-        Dashware.setTitle(""); 
-        Dashware.setSize(800, 500); 
-        Dashware.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
-
-
-        Dashware.setVisible(true);
-}
     
+    public Dashware(){
         
+        // Ventana
+        this.setTitle("Dashware");
+        this.setSize(1000, 800);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setLayout(null);
 
-    public JFrame getDashFrame(){
+        // Crear y agregar la tabla
+        TablaBanner tabla = new TablaBanner();
+        tabla.setBounds(0, 0, 1000, 800); 
+        this.add(tabla); 
+
+        this.setVisible(true);
+    }
+    public JFrame getDasFrame(){
         return this;
     }
-    
 }
