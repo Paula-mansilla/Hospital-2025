@@ -1,32 +1,26 @@
 package Control;
 
 public class LoginControler {
+
+    //Datos del usuario
+    String[][] credenciales ={
+        {"user01", "pass01"}, {"maria22", "qwerty"},
+        {"admin", "1234"}, {"juanito", "abcd"},
+    {"lola", "0000"},{"prueba", "test"},
+    {"ana12", "4321"},{"pepe7", "xyz"},
+    {"carlosx", "1a2b3c"},
+    {"demo", "demo"}
+    };
+
+    public boolean validacionDatos(String EntradaUsuario, String EntradaContrasenna) {
+        boolean res = false;
     
-//Usuario
-String[][] credenciales = {
-    {"paulamansilla", "mansilla"},
-    {"carlosperez", "perez123"},
-    {"lauragonzalez", "gonzalez456"},
-    {"mariolopez", "lopez789"},
-    {"anaruiz", "ruiz321"},
-    {"josesanchez", "sanchez654"},
-    {"elenafernandez", "fernandez987"}
-   };
- 
-
-public  boolean validacionDatos (String EUsuario, String EContrasenna){
-
-    boolean res = false;
-    for (int i = 0; i < credenciales.length; i++){
-
-        if (credenciales[i][0].equals(EUsuario) && credenciales[i][1].equals(EContrasenna)){
-            res = true;
-        }else {
-            res = false;
+        for (int i = 0; i < credenciales.length; i++) {
+            if (credenciales[i][0].equals(EntradaUsuario) && credenciales[i][1].equals(EntradaContrasenna)) {
+                res = true;
+            }
         }
+    
+        return res; 
     }
-
-     return res;
-}
-}
-
+}   

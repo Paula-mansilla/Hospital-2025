@@ -1,11 +1,10 @@
-package Vistas;
+package Paneles;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Insets;
 import java.awt.event.*;
-import Vistas.TablaBanner;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -17,6 +16,7 @@ import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 
 import Control.LoginControler;
+import Paneles.TablaBanner;
 import Ventanas.Dashware;
 
 public class LoginPanel {
@@ -73,8 +73,8 @@ gbc.fill = GridBagConstraints.NONE;
 panelLogin.add(btnIngresar ,gbc);
 
 //Usuario
-String usuario [] = { "paulamansilla"};
-String contrasenna [] = {"mansilla"};
+String usuario [] = { ""};
+String contrasenna [] = {""};
 
 //boton login
 

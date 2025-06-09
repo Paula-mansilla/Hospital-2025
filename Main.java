@@ -1,8 +1,9 @@
 import java.awt.BorderLayout;
 
 import javax.swing.*;
-import Vistas.LoginPanel;
-import Vistas.bannerPanel;
+
+import Paneles.LoginPanel;
+import Paneles.bannerPanel;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,7 +14,9 @@ public class Main {
         miVentana.setSize(1000, 800);       // Establece el tamaño de la ventana (ancho x alto)
         miVentana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         miVentana.setLayout(new BorderLayout());
-
+        miVentana.setLocationRelativeTo (null);
+        
+        
         // Panel Banner
         LoginPanel loginPanel = new LoginPanel();
         miVentana.add(loginPanel.getJPanel(), BorderLayout.CENTER);
@@ -25,4 +28,5 @@ public class Main {
         miVentana.setVisible(true);         // Muestra la ventana en pantalla
     }
 }
+
 

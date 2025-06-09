@@ -1,7 +1,11 @@
 package Ventanas;
 
+import java.awt.BorderLayout;
+
 import javax.swing.JFrame;
-import Vistas.TablaBanner; 
+
+import Paneles.MenuLateralPanel;
+import Paneles.TablaBanner; 
 
 public class Dashware extends JFrame {
     
@@ -9,18 +13,17 @@ public class Dashware extends JFrame {
         
         // Ventana
         this.setTitle("Dashware");
-        this.setSize(1000, 800);
+        this.setSize(1600, 800);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setLayout(null);
+        this.setLayout(new BorderLayout());
 
-        // Crear y agregar la tabla
-        TablaBanner tabla = new TablaBanner();
-        tabla.setBounds(0, 0, 1000, 800); 
-        this.add(tabla); 
+        this.add(new MenuLateralPanel().getPanel(), BorderLayout.WEST);
+        TablaBanner tablaBanner = new TablaBanner();
+        add(tablaBanner);
+       
+
 
         this.setVisible(true);
     }
-    public JFrame getDasFrame(){
-        return this;
-    }
+
 }
