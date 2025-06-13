@@ -17,7 +17,8 @@ import javax.swing.SwingUtilities;
 
 import Control.LoginControler;
 import Paneles.TablaBanner;
-import Ventanas.Dashware;
+import Ventanas.Dashboard;
+
 
 public class LoginPanel {
 
@@ -51,14 +52,14 @@ panelLogin.add(titulo , gbc);
 
 
 //Entrada correo
-JTextField entradaCorreo = new JTextField("Usuario");
+JTextField entradaCorreo = new JTextField("");
 entradaCorreo.setSize(new Dimension(100,50));
 gbc.gridx = 1;
 gbc.gridy = 1;
 panelLogin.add(entradaCorreo , gbc); 
 
 //Entrada contraseña
-JPasswordField entradacontraseña = new JPasswordField("Contraseña");
+JPasswordField entradacontraseña = new JPasswordField("");
 entradacontraseña.setSize(new Dimension(100,50));
 gbc.gridx = 1;
 gbc.gridy = 2;
@@ -87,7 +88,7 @@ String entradaContrasenna = entradacontraseña.getText();
         
 if(new LoginControler().validacionDatos(entradaUsuario, entradaContrasenna)){
     
-new Dashware();
+new Dashboard();
 JFrame ventanaPadre = (JFrame) SwingUtilities.getWindowAncestor(panelLogin);
 ventanaPadre.dispose();
 }
