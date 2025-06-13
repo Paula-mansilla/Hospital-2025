@@ -12,7 +12,7 @@ public class TablaBanner extends JScrollPane {
 
     public TablaBanner() {
         // Columnas de la tabla
-        String[] columnas = { "ID", "Nombre", "Edad" };
+        String[] columnas = { "ID", "Nombre", "Edad","Consulta", "Hora" };
 
         // Datos de la tabla
         Object[][] datos = new pacientes().getDatos();
