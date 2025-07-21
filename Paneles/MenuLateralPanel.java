@@ -13,7 +13,7 @@ public class MenuLateralPanel extends JPanel {
     private JButton btnHabitaciones;
     private JButton btnDoctores;
     private JButton btnCirujanos;
-    private JButton btnServiciosLimpieza;
+    private JButton btnFarmacia;
     
     public MenuLateralPanel() {
         this.setPreferredSize(new Dimension(400, 1000));
@@ -36,8 +36,8 @@ public class MenuLateralPanel extends JPanel {
         btnCirujanos = new JButton("Cirujanos");
         btnCirujanos.setBounds(20, 170, 150, 40);
 
-        btnServiciosLimpieza = new JButton("Servicios de Limpieza");
-        btnServiciosLimpieza.setBounds(180, 170, 150, 40);
+        btnFarmacia = new JButton("Farmacia");
+        btnFarmacia.setBounds(180, 170, 150, 40);
 
         // Agregar botones al panel
         this.setLayout(null); // Layout nulo para usar setBounds
@@ -46,7 +46,7 @@ public class MenuLateralPanel extends JPanel {
         this.add(btnHabitaciones);
         this.add(btnDoctores);
         this.add(btnCirujanos);
-        this.add(btnServiciosLimpieza);
+        this.add(btnFarmacia);
         // --- FIN AGREGADO ---
     }
     
